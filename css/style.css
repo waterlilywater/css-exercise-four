@@ -2,3 +2,72 @@ body {
   background-color: #dadada;
   font-size: 10px;
 }
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    margin-top: .5em;
+    font-family: sans-serif;
+}
+
+
+.baku {
+  background-image: url(../images/baku.jpg);
+}
+
+.london {
+  background-image: url(../images/london.png);
+}
+
+.madrid {
+  background-image: url(../images/madrid.jpg);
+}
+
+.rome {
+  background-image: url(../images/rome.jpg);
+}
+
+.preview {
+  height: 375px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 2em;
+}
+
+.preview h1 {
+  text-align: left;
+  text-transform: none;
+  font-family: serif;
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 600px) {
+  .preview {
+    width: 45%;
+    height: 150px;
+    float: right;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .preview {
+    width: 20%;
+    height: 150px;
+    float: left;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+  }
+
+  .preview:first-of-type {
+    margin-left: 8.5%;
+  }
+
+  .preview:last-of-type {
+    margin-right: 8.5%;
+  }
+}
